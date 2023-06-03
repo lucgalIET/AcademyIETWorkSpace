@@ -1,4 +1,4 @@
-package EserciziInClasse.EsercizioPianeti;
+package EserciziACasa.EsercizioPianeti;
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 
 1. Definisci un'interfaccia chiamata "Pianeta" con il seguente metodo:
@@ -30,6 +30,9 @@ public abstract class CorpoCeleste {
     }
 
     public CorpoCeleste(String nome, boolean tipo, double distanzaDalSole) {
+        String regexNome = "^[a-zA-Z]+$";
+//        String regexDistanza =
+        if(!nome.matches(regexNome)) throw new IllegalArgumentException();
         this.nome = nome;
         this.tipo = tipo;
         this.distanzaDalSole = distanzaDalSole;
@@ -57,5 +60,10 @@ public abstract class CorpoCeleste {
 
     public void setDistanzaDalSole(double distanzaDalSole) {
         this.distanzaDalSole = distanzaDalSole;
+    }
+
+    @Override
+    public String toString() {
+        return nome;
     }
 }

@@ -1,4 +1,4 @@
-package EserciziInClasse.EsercizioPianeti;
+package EserciziInClasse.EsercizioPianeti01_06;
 
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 

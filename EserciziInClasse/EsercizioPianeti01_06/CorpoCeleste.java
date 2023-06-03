@@ -1,5 +1,4 @@
-package EserciziInClasse.EsercizioPianeti;
-
+package EserciziInClasse.EsercizioPianeti01_06;
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 
 1. Definisci un'interfaccia chiamata "Pianeta" con il seguente metodo:
@@ -22,22 +21,41 @@ package EserciziInClasse.EsercizioPianeti;
    - Crea una lista di tipo "CorpoCeleste".
    - Crea almeno due istanze di pianeti, uno terrestre e uno gassoso.
    - Aggiungi le istanze alla lista di corpi celesti.*/
-public class PianetaGassoso extends CorpoCeleste {
-    private double diametro;
+public abstract class CorpoCeleste {
+    private String nome;
+    private boolean tipo;
+    private double distanzaDalSole;
 
-    public PianetaGassoso() {
+    public CorpoCeleste() {
     }
 
-    public PianetaGassoso(String nome, double distanzaDalSole, double diametro) {
-        super(nome, true, distanzaDalSole);
-        this.diametro = diametro;
+    public CorpoCeleste(String nome, boolean tipo, double distanzaDalSole) {
+        this.nome = nome;
+        this.tipo = tipo;
+        this.distanzaDalSole = distanzaDalSole;
     }
 
-    public double getDiametro() {
-        return diametro;
+    public String getNome() {
+        return nome;
     }
 
-    public void setDiametro(double diametro) {
-        this.diametro = diametro;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public boolean isTipo() {
+        return tipo;
+    }
+
+    public void setTipo(boolean tipo) {
+        this.tipo = tipo;
+    }
+
+    public double getDistanzaDalSole() {
+        return distanzaDalSole;
+    }
+
+    public void setDistanzaDalSole(double distanzaDalSole) {
+        this.distanzaDalSole = distanzaDalSole;
     }
 }
