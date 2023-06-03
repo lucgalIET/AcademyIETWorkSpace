@@ -1,4 +1,4 @@
-package eserciziPerCasa.EserciziFunctionalInterface.EserciziInterface;
+package eserciziPerCasa.EserciziFunctionalInterface;
 /*
 Implementa una Function che prende in input una lista di stringhe e restituisce una nuova lista
 contenente solo le stringhe che iniziano con la lettera "A".

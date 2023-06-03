@@ -1,4 +1,4 @@
-package eserciziPerCasa.EserciziFunctionalInterface.EserciziInterface;
+package eserciziPerCasa.EserciziFunctionalInterface;
 /*
 Implementa un Runnable che esegue un conteggio progressivo da 1 a 10.
 [bonus]stampando ogni numero dopo un breve ritardo. (classe Thread)
