@@ -27,4 +27,4 @@ replay_pid*
 SviluppoLocale/
 .idea
 *.iml
-out
+out/
