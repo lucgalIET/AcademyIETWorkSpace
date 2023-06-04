@@ -1,4 +1,4 @@
-package Esercizio.src.esercizi;
+package esercizi.src.eserciziCasa;
 
 import java.util.*;
 import java.util.function.Consumer;

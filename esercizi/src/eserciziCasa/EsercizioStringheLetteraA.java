@@ -1,4 +1,4 @@
-package eserciziCasa;
+package esercizi.src.eserciziCasa;
 
 import java.util.ArrayList;
 import java.util.Arrays;

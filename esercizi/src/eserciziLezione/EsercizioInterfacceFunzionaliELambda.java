@@ -1,4 +1,4 @@
-package eserciziLezione;
+package esercizi.src.eserciziLezione;
 
 
 import java.util.Arrays;

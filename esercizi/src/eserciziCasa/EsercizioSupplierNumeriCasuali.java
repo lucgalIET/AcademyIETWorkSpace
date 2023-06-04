@@ -1,4 +1,4 @@
-package eserciziCasa;
+package esercizi.src.eserciziCasa;
 
 import java.util.Random;
 import java.util.function.Supplier;
