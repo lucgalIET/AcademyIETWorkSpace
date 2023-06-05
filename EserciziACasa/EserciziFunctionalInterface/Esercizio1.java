@@ -12,5 +12,9 @@ public class Esercizio1 {
         strings.forEach(consumer);
 
         System.out.println(strings);
+
+        //versione con gli stream
+        strings.stream().map(String::toUpperCase).forEach(System.out::println);
+
     }
 }

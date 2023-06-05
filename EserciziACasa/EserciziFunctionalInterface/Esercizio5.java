@@ -36,8 +36,8 @@ public class Esercizio5 {
             return generatedList;
         };
 
-        list = supplier.get();
-        list = function.apply(list);
+
+        list = function.apply(supplier.get());
         list.forEach(consumer);
         runnable.run();
 
