@@ -1,4 +1,4 @@
-package Interface;
+package EsercizioPianeti.Interface;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,8 +9,9 @@ import java.util.function.Function;
 public class Esercizio3 {
     public static void main(String[] args) {
         //3.Implementa una Function che prende in input una lista di stringhe e restituisce una nuova lista contenente solo le stringhe che iniziano con la lettera "A".
-        List<String> listString2= Arrays.asList("Andiamo", "ciao", "Domani", "Adesso","allora");
-        Consumer<List <String>> consumer2=(strings)-> {
+        List<String> listString2= Arrays.asList("Andiamo", "ciao", "Domani", "Adesso","Allora");
+
+       /* Consumer<List <String>> consumer2=(strings)-> {
             for (String s : strings) {
                 System.out.println(s);
             }
@@ -25,5 +26,11 @@ public class Esercizio3 {
         };
 
         listString2.stream().map(function).forEach(consumer2);
+
+        */
+        listString2.stream()
+                .filter(x-> x.startsWith("A"))
+                .forEach(System.out::println);
+
     }
 }

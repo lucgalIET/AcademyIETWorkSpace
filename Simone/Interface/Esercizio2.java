@@ -1,12 +1,15 @@
-package Interface;
+package EsercizioPianeti.Interface;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.function.Supplier;
 
 public class Esercizio2 {
     public static void main(String[] args) {
         //2.Implementa un Supplier che genera una sequenza di numeri interi casuali e restituisce la somma di questi numeri.
-        Supplier<Integer> supplier=()->{
+
+       /* Supplier<Integer> supplier=()->{
             Random random=new Random();
             int somma=0;
             for(int i=0; i<random.nextInt(1,10);i++){
@@ -14,6 +17,15 @@ public class Esercizio2 {
             }
             return somma;
         };
-        System.out.println(supplier.get());
+        System.out.println(supplier.get());*/
+        Supplier<List<Integer>> supplier=()->{
+            Random random=new Random();
+            List<Integer> listaNumeri=new ArrayList<>();
+            for(int i=0; i<random.nextInt(1,10);i++){
+                listaNumeri.add(random.nextInt(1,1000));
+            }
+            return listaNumeri;
+        };
+        supplier.get().stream().map(x -> x+=x).forEach(System.out::println);
     }
 }
