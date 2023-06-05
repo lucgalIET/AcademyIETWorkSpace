@@ -13,17 +13,23 @@ import java.util.function.Function;
 
         public static void main(String[] args) {
             List<String> listaString = Arrays.asList("Andrea", "ciao", "Domani", "Adesso","allora");
-            Consumer<String> consumer = (strings)-> System.out.println(strings);
+//            Consumer<String> consumer = (strings)-> System.out.println(strings);
+//
+//            Function<String, String> function = (strings)->{
+//                String parola = "";
+//                if(strings.startsWith("A"))
+//                    parola = strings;
+//                return parola;
+//
+//            };
+//
+//            listaString.stream().map(function).forEach(consumer);
 
-            Function<String, String> function = (strings)->{
-                String parola = "";
-                if(strings.startsWith("A"))
-                    parola = strings;
-                return parola;
+            //versione con stream
+            listaString.stream()
+                    .filter(x-> x.startsWith("A"))
+                    .forEach(System.out::println);
 
-            };
-
-            listaString.stream().map(function).forEach(consumer);
         }
 }
 

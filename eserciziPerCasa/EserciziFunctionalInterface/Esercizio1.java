@@ -19,6 +19,10 @@ sostituendo ogni stringa con la sua versione in maiuscolo.
         Consumer<String> consumer = (strings) -> System.out.print(strings.toUpperCase() + " ");
         System.out.println();
         listaString.forEach(consumer);
+
+
+        //versione con gli stream
+        listaString.stream().map(String::toUpperCase).forEach(System.out::println);
     }
 }
 
