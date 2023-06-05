@@ -1,4 +1,4 @@
-package Interface;
+package EsercizioPianeti.Interface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class Esercizio5 {
             int numeroPari = interi;
             int numeroAlQuadrato = 0;
             if (numeroPari % 2 == 0) {
-                numeroAlQuadrato = numeroPari + numeroPari;
+                numeroAlQuadrato = numeroPari * numeroPari;
             }
             return numeroAlQuadrato;
         };
@@ -34,7 +34,7 @@ public class Esercizio5 {
             }
         };
 
-        Runnable runnable = () -> {
+       /* Runnable runnable = () -> {
             for (int i = 0; i < 5; i++) {
                 numeriCasuali.add(supplier.get());
             }
@@ -42,5 +42,13 @@ public class Esercizio5 {
         };
 
         runnable.run();
+        
+        */
+
+        for (int i = 0; i < 5; i++) {
+            numeriCasuali.add(supplier.get());
+        }
+
+        numeriCasuali.stream().filter(x -> x%2==0).map(x-> x*x).forEach(System.out::println);
     }
 }

@@ -1,4 +1,4 @@
-package Interface;
+package EsercizioPianeti.Interface;
 
 public class Esercizio4 {
     public static void main(String[] args) {
