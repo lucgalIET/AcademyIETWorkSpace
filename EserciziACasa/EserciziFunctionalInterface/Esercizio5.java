@@ -41,5 +41,9 @@ public class Esercizio5 {
         list.forEach(consumer);
         runnable.run();
 
+        System.out.println("---------------------------");
+        //Prova oneline
+        List<Integer> listOneLine = supplier.get();
+        listOneLine.stream().filter(x->x%2==0).map(x->(int)Math.pow(x,2)).forEach(System.out::println);
     }
 }
