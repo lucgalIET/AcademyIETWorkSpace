@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.function.Supplier;
 
 public class Esercizio2 {
+    private static int somma=0;
     public static void main(String[] args) {
         //2.Implementa un Supplier che genera una sequenza di numeri interi casuali e restituisce la somma di questi numeri.
 
@@ -26,6 +27,8 @@ public class Esercizio2 {
             }
             return listaNumeri;
         };
-        supplier.get().stream().map(x -> x+=x).forEach(System.out::println);
+
+        supplier.get().forEach(x -> somma+=x);
+        System.out.println(somma);
     }
 }
