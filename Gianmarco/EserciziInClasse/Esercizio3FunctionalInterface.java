@@ -38,3 +38,4 @@ public class Esercizio3FunctionalInterface {
         System.out.println(function.apply(listaStringhe));
     }
 }
+
