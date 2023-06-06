@@ -12,10 +12,11 @@ public class Esercizio5 {
 //5.Combina le interfacce funzionali Consumer, Supplier, Function e Runnable per
 // implementare un programma che genera una sequenza di numeri casuali, li filtra prendendo solo quelli pari, li eleva al quadrato e li stampa.
         List<Integer> numeriCasuali = new ArrayList<>();
-        Supplier<Integer> supplier = () -> {
+        Random random = new Random();
+       /* Supplier<Integer> supplier = () -> {
             Random random = new Random();
             return random.nextInt(1, 100);
-        };
+        };*/
 
         Function<Integer, Integer> function = (interi) -> {
             int numeroPari = interi;
@@ -44,7 +45,7 @@ public class Esercizio5 {
         runnable.run();
         
         */
-
+        Supplier<Integer> supplier = () -> new Random().nextInt(1,100);
         for (int i = 0; i < 5; i++) {
             numeriCasuali.add(supplier.get());
         }
