@@ -27,7 +27,7 @@ import java.util.function.Function;
 
             //versione con stream
             listaString.stream()
-                    .filter(x-> x.startsWith("A"))
+                    .filter(x-> x.startsWith("A") || x.startsWith("a"))
                     .forEach(System.out::println);
 
         }
