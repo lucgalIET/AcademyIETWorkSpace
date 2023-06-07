@@ -10,7 +10,7 @@ import java.util.function.Function;
 public class EsercizioStringheLetteraA {
     public static void main(String[] args) {
         EsercizioStringheLetteraA es = new EsercizioStringheLetteraA();
-        es.restituisceListaConA( Arrays.asList("Alunno", "Albino", "Alluminio", "Diego", "Mario", "Claudio", "Attila"));
+        es.restituisceListaConA(Arrays.asList("Alunno", "Albino", "Alluminio", "Diego", "Mario", "Claudio", "Attila"));
     }
     public List<String> restituisceListaConA(List<String> listaNomi) {
 

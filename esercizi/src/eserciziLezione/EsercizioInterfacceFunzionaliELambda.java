@@ -1,6 +1,7 @@
 package esercizi.src.eserciziLezione;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -24,7 +25,14 @@ public class EsercizioInterfacceFunzionaliELambda {
 
         int intero = interoCasuale.get();
         System.out.println("Numero casuale "+intero);
-    }
+
+        Supplier<List<Integer>> supplier = ()-> {
+            List<Integer> lista= new ArrayList<>();
+            for(int i=0; i<10;i++){
+                lista.add( (int) (Math.random()*100));
+            }
+        return lista;};
+        supplier.get().stream().map(x->x+=x).forEach(System.out::println);}
 
 
 

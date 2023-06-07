@@ -22,11 +22,12 @@ public class EsercizioSostituisciStringhe1Maiuscolo {
             for (int i = 0; i<lista.size();i++){
 
                 String parolaDaModificare= lista.get(i);
-               lista.remove(i);
+               lista.remove(lista.get(i));
             String s1 = parolaDaModificare.substring(0, 1).toUpperCase();  // recupero la prima lettera
             String s2 = parolaDaModificare.substring(1);     // recupero la parte rimanente  della stringa
             parolaDaModificare = parolaDaModificare.substring(0, 1).toUpperCase() + parolaDaModificare.substring(1); // sommo dopo la modifica le due stringhe
 //            lista.add(i,parolaDaModificare);
+                System.out.println(parolaDaModificare);
         }};
            String[] parole= stringa.split(" ");
                 lista= Arrays.stream(parole).toList();
