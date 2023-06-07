@@ -1,4 +1,4 @@
-package EserciziACasa.EsercizioPianeti;
+package eserciziacasa.eserciziopianeti;
 
 import java.util.Set;
 

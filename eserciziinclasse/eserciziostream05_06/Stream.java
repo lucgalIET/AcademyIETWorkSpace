@@ -1,4 +1,4 @@
-package EserciziInClasse.EsercizioStream05_06;
+package eserciziinclasse.eserciziostream05_06;
 
 import java.util.Arrays;
 import java.util.List;

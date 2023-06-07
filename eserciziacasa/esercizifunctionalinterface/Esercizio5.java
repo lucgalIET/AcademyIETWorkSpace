@@ -1,4 +1,4 @@
-package EserciziACasa.EserciziFunctionalInterface;
+package eserciziacasa.esercizifunctionalinterface;
 
 import java.util.*;
 import java.util.function.Consumer;

@@ -1,4 +1,4 @@
-package EserciziInClasse.EsercizioRegex30_05;
+package eserciziinclasse.esercizioregex30_05;
 
 /*
     Espressioni regolari:

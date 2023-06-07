@@ -1,4 +1,4 @@
-package EserciziACasa.EsercizioPianeti;
+package eserciziacasa.eserciziopianeti;
 
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 

@@ -1,4 +1,4 @@
-package EserciziACasa.EserciziFunctionalInterface;
+package eserciziacasa.esercizifunctionalinterface;
 
 public class Esercizio4 {
     public static void main(String[] args) {
