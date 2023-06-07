@@ -43,8 +43,10 @@ public class Esercizio5 {
             }
         };
 
-        runnable.run();
-        supplier.get().stream().map(function).forEach(consumer);
+        //runnable.run();
+
+
+        supplier.get().stream().filter(x->x%2 == 0).map(x->(int)Math.pow(x,2)).forEach(System.out::println);
     }
 
 }
