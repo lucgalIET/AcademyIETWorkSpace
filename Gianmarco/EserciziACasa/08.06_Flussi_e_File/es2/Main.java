@@ -58,12 +58,18 @@ public class Main {
             throw new RuntimeException();
         }
 
-        try(FileReader fileReader = new FileReader("es2.txt");{
-                    }
+        try(FileReader fileReader = new FileReader("es2.txt");
+            BufferedReader bufferedReader = new BufferedReader(fileReader)){
 
+            String line;
 
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
+            }
 
-
+        } catch (IOException exception) {
+            throw new RuntimeException();
+        }
 
     }
 }

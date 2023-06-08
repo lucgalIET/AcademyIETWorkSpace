@@ -1,0 +1,6 @@
+Prodotto: a, id: 1, prezzo: 1.0
+---------------------
+Prodotto: a, id: 1, prezzo: 1.0
+---------------------
+Prodotto: a, id: 1, prezzo: 1.0
+---------------------
