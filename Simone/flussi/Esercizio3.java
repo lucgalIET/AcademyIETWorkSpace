@@ -36,17 +36,24 @@ public class Esercizio3 {
             bufferedWriter.close();
 
 
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("mappa.txt"));
-            String line = bufferedReader.readLine();
 
-            while (line != null) {
-                System.out.println(line);
+
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("mappa.txt"));
+            System.out.println("Inserisci il codice ISBN da cercare");
+            String line = mioScanner.nextLine();
+
+            String regex = "isbn: "+line;
+            line = bufferedReader.readLine();
+            while (line != null){
+                if(line.contains(regex)){
+                    System.out.println(line);
+                }
                 line = bufferedReader.readLine();
             }
-
+            bufferedReader.close();
         } catch (IOException e) {
             throw new RuntimeException();
         }
-
+        mioScanner.close();
     }
 }

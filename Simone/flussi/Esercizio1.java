@@ -25,5 +25,6 @@ public class Esercizio1 {
         }catch(IOException e){
             throw new RuntimeException();
         }
+        mioScanner.close();
     }
 }
