@@ -40,12 +40,11 @@ public class Esercizio3 {
 
             BufferedReader bufferedReader = new BufferedReader(new FileReader("mappa.txt"));
             System.out.println("Inserisci il codice ISBN da cercare");
-            String line = mioScanner.nextLine();
-
-            String regex = "isbn: "+line;
-            line = bufferedReader.readLine();
+            String parolaDaCercare = mioScanner.nextLine();
+            
+            String line = bufferedReader.readLine();
             while (line != null){
-                if(line.contains(regex)){
+                if(line.contains(parolaDaCercare)){
                     System.out.println(line);
                 }
                 line = bufferedReader.readLine();
