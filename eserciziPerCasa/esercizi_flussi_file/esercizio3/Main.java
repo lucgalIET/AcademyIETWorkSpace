@@ -59,34 +59,29 @@ public class Main {
 //                book = bufferedReader.readLine();
 //            }
 
-           System.out.println("Inserisci ISBN del libro da visualizzare ");
-           Integer isbnInput = input.nextInt();
-           String s = bufferedReader.readLine();
-           int cont = 1;
-           boolean trovato = false;
+            System.out.println("Inserisci ISBN del libro da visualizzare ");
+            String isbnInput = input.nextLine();
+            input.close();
 
-           while (s!=null && !trovato){
-              if(cont == isbnInput){
-                  trovato = true;
-                  break;
-              }else {
-                  s = bufferedReader.readLine();
-                  cont++;
-              }
-           }
-           if(!trovato)
-               System.out.println("Libro non presente nel file");
-            else System.out.println(s);
+            String s = bufferedReader.readLine();
 
+            while (s != null) {
+                if (s.contains(isbnInput)) {
+                    System.out.println(s);
+                    break;
+                }
+                s = bufferedReader.readLine();
+
+            }
+            if(s==null)
+                System.out.println("Libro non presente nel file");
 
             bufferedReader.close();
-
-
-        } catch (
-                IOException e) {
-            throw new RuntimeException();
+        } catch(IOException e){
+                throw new RuntimeException();
+            }
         }
-    }
+
 }
 
 
