@@ -1,4 +1,4 @@
-package EserciziCasa_04_06_23;
+package EserciziCasa_04_06_23.InterfacceFunzionali;
 /*
 3.Implementa una Function che prende in input una lista
 di stringhe e restituisce una nuova lista contenente solo

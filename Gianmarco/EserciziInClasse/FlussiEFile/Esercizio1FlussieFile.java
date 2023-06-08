@@ -1,4 +1,4 @@
-package EserciziCasa_04_06_23;
+package EserciziCasa_04_06_23.FlussiEFile;
 
 /*
 scriviamo un file.bin e il programma deve scriverci 10 numeri casuali.
