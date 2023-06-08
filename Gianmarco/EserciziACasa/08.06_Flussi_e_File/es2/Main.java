@@ -10,10 +10,7 @@ di testo e leggi il file per visualizzare i prodotti
 sullo schermo. bonus:utilizzo di map
  */
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -60,6 +57,9 @@ public class Main {
         }catch(IOException exception){
             throw new RuntimeException();
         }
+
+        try(FileReader fileReader = new FileReader("es2.txt");{
+                    }
 
 
 

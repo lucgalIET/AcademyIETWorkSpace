@@ -15,7 +15,6 @@ public class Esercizio1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("inserisci la tua frase");
         String frase = scanner.nextLine();
-        String fraseDaLeggere;
 
         try {
             FileWriter writer = new FileWriter("file.txt");
