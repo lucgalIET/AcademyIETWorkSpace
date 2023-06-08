@@ -2,7 +2,7 @@ package esercizi.src.eserciziCasa.Es_8_6_23.Esercizio2_3OOP;
 
 import java.util.Scanner;
 
-public abstract class AbstractInserisciValore {
+public abstract class AbstractInserisciValore implements Print{
     public static int inserisciValoreNumerico(){
         boolean valoreCorretto=false;
         String valore="";
@@ -48,7 +48,7 @@ public abstract class AbstractInserisciValore {
             valoreCorretto = valore.matches("[a-zA-Z]+");
             scanner.close();
             if (!valoreCorretto){
-                System.out.println("Il valore non contiene solo lettere!");
+                System.out.println("Il valore non contiene solo numeri!");
             }
 
         }

@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class MiniBibblioteca extends AbstractInserisciValore{
+public class MiniBibblioteca extends AbstractInserisciValore  implements Print,Read{
     public static void main(String[] args) throws IOException {
 
         Map<String, Book> libri = new TreeMap<>();
@@ -23,17 +23,14 @@ public class MiniBibblioteca extends AbstractInserisciValore{
             System.out.println("Vuoi inserire un altro prodotto? (si/no)");
             Scanner scanner = new Scanner(System.in);
             String continuare = scanner.nextLine();
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("libri.txt"));
-            bufferedWriter.write("Libro: "+isbn+" "+autore+ " "+ titolo+"\n");
-            bufferedWriter.close();
+
+            Print.print("libri.txt","Libro: "+isbn+" "+autore+ " "+ titolo+"\n");
             switch (continuare) {
                 case "si" -> {
                 }
                 case "no" -> inserisci = false;
             }
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("libri.txt"));
-            String fraseLetta = bufferedReader.readLine();
-            System.out.println("Il file contiene-> "+fraseLetta);
+            Read.read("libri.txt");
 
 
 

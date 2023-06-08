@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class ValoriScriviLeggiEs2 extends AbstractInserisciValore {
+public class ValoriScriviLeggiEs2 extends AbstractInserisciValore implements Print,Read{
     public static void main(String[] args) throws IOException {
 //        Product product = new Product();
         Map<String, Product> prodotti = new TreeMap<>();
@@ -23,17 +23,14 @@ public class ValoriScriviLeggiEs2 extends AbstractInserisciValore {
             System.out.println("Vuoi inserire un altro prodotto? (si/no)");
             Scanner scanner = new Scanner(System.in);
             String continuare = scanner.nextLine();
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("prodotti.txt"));
-            bufferedWriter.write("Pododotto: "+id+" "+nome+ " "+ prezzo+"\n");
-            bufferedWriter.close();
+
+            Print.print("prodotti.txt","Pododotto: "+id+" "+nome+ " "+ prezzo+"\n");
             switch (continuare) {
                 case "si" -> {
                 }
                 case "no" -> inserisci = false;
             }
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("prodotti.txt"));
-            String fraseLetta = bufferedReader.readLine();
-            System.out.println("Il file contiene-> "+fraseLetta);
+            Read.read("prodotti.txt");
 
 
 
