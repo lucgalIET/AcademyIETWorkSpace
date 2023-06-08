@@ -40,10 +40,11 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "isbn='" + isbn + '\'' +
-                ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                '}'+"\n";
+        StringBuilder sb=new StringBuilder();
+        sb.append("Book{");
+        sb.append("isbn: "+ isbn+ ", ");
+        sb.append("title: "+ title+ ", ");
+        sb.append("author: "+ author+ "}\n");
+        return sb.toString();
     }
 }
