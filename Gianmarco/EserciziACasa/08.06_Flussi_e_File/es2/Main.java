@@ -29,7 +29,6 @@ public class Main {
             scanner.nextLine();
             System.out.println("Nome:");
             String nome = scanner.nextLine();
-
             System.out.println("Prezzo:");
             double prezzo = scanner.nextDouble();
 
