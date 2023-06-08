@@ -1,4 +1,4 @@
-package esercizi.src.eserciziCasa;
+package esercizi.src.eserciziCasa.Es_5_6_23;
 
 //Esercizio: Validazione di un indirizzo IP
 //        Scrivi un programma Java che chiede all'utente di inserire un indirizzo IP e verifica se l'indirizzo inserito è valido.

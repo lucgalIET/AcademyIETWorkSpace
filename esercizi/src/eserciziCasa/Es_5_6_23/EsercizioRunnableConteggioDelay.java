@@ -1,4 +1,4 @@
-package esercizi.src.eserciziCasa;;
+package esercizi.src.eserciziCasa.Es_5_6_23;;
 
 public class EsercizioRunnableConteggioDelay {
 //    4.Implementa un Runnable che esegue un conteggio progressivo da 1 a 10. [bonus]stampando ogni numero dopo un breve ritardo. (classe Thread)
