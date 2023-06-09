@@ -1,0 +1,3 @@
+ISBN: 9874= ISBN: 9874, title: la ragazza della porta accanto, author: susanna tamaro
+ISBN: 4567= ISBN: 4567, title: l'alchimista, author: paolo cohelo
+ISBN: 12345= ISBN: 12345, title: cime tempestose, author: climt
