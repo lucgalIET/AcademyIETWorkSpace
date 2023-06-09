@@ -41,7 +41,7 @@ public class Esercizio3 {
             BufferedReader bufferedReader = new BufferedReader(new FileReader("mappa.txt"));
             System.out.println("Inserisci il codice ISBN da cercare");
             String parolaDaCercare = mioScanner.nextLine();
-            
+
             String line = bufferedReader.readLine();
             while (line != null){
                 if(line.contains(parolaDaCercare)){
