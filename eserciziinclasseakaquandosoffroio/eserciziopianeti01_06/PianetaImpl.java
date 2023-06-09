@@ -1,4 +1,4 @@
-package eserciziinclasse.eserciziopianeti01_06;
+package eserciziinclasseakaquandosoffroio.eserciziopianeti01_06;
 
 import java.util.Set;
 

@@ -12,18 +12,16 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner myScan = new Scanner(System.in);
-        System.out.println("Inserisci ISBN, Titolo e Autore: ");
-        Book b1 = new Book(myScan.next(), myScan.next(), myScan.next());
-        System.out.println("Inserisci ISBN, Titolo e Autore: ");
-        Book b2 = new Book(myScan.next(), myScan.next(), myScan.next());
-        System.out.println("Inserisci ISBN, Titolo e Autore: ");
-        Book b3 = new Book(myScan.next(), myScan.next(), myScan.next());
 
         Map<String, Book> bookMap = new HashMap<>();
 
-        bookMap.put(b1.getIsbn(), b1);
-        bookMap.put(b2.getIsbn(), b2);
-        bookMap.put(b3.getIsbn(), b3);
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Inserisci ISBN, Titolo e Autore: ");
+            Book b = new Book(myScan.next(), myScan.next(), myScan.next());
+            bookMap.put(b.getIsbn(), b);
+        }
+
 
         Function<Book, String> function = (b) -> {
             String s = "ISBN: "+b.getIsbn();

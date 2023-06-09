@@ -1,4 +1,4 @@
-package eserciziinclasse.eserciziopianeti01_06;
+package eserciziinclasseakaquandosoffroio.eserciziopianeti01_06;
 
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 

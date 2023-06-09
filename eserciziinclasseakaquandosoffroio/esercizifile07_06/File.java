@@ -1,4 +1,4 @@
-package eserciziinclasse.esercizifile07_06;
+package eserciziinclasseakaquandosoffroio.esercizifile07_06;
 
 import java.io.*;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class File {
         Scanner myScan = new Scanner(System.in);
 
         try{
-            Writer writer = new FileWriter("eserciziinclasse/esercizifile07_06/file.txt");
+            Writer writer = new FileWriter("eserciziinclasseakaquandosoffroio/esercizifile07_06/file.txt");
             String s = myScan.next();
             while(!s.equals("X")){
                 writer.write(s);
@@ -22,7 +22,7 @@ public class File {
             writer.close();
             myScan.close();
 
-            Reader reader = new FileReader("eserciziinclasse/esercizifile07_06/file.txt");
+            Reader reader = new FileReader("eserciziinclasseakaquandosoffroio/esercizifile07_06/file.txt");
             int s1 = reader.read();
 
             while(s1 != -1){

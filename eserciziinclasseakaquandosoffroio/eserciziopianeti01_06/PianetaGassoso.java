@@ -1,6 +1,4 @@
-package eserciziinclasse.eserciziopianeti01_06;
-
-import java.util.Set;
+package eserciziinclasseakaquandosoffroio.eserciziopianeti01_06;
 
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 
@@ -24,11 +22,22 @@ import java.util.Set;
    - Crea una lista di tipo "CorpoCeleste".
    - Crea almeno due istanze di pianeti, uno terrestre e uno gassoso.
    - Aggiungi le istanze alla lista di corpi celesti.*/
-public interface Pianeta {
-    int contaPianeti(Set<CorpoCeleste> setPianeti);
-    boolean scopriPianeta(Set<CorpoCeleste> setPianeti, CorpoCeleste pianeta);
-    // calcolagravita
-//    static boolean scopriPianeta(Set<CorpoCeleste> setPianeti, CorpoCeleste pianeta){
-//        return setPianeti.contains(pianeta);
-//    }  ESEMPIO
+public class PianetaGassoso extends CorpoCeleste {
+    private double diametro;
+
+    public PianetaGassoso() {
+    }
+
+    public PianetaGassoso(String nome, double distanzaDalSole, double diametro) {
+        super(nome, true, distanzaDalSole);
+        this.diametro = diametro;
+    }
+
+    public double getDiametro() {
+        return diametro;
+    }
+
+    public void setDiametro(double diametro) {
+        this.diametro = diametro;
+    }
 }

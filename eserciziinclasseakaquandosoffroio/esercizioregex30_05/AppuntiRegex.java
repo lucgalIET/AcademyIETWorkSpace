@@ -1,4 +1,4 @@
-package eserciziinclasse.esercizioregex30_05;
+package eserciziinclasseakaquandosoffroio.esercizioregex30_05;
 
 /*
     Espressioni regolari:
