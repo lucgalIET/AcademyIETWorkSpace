@@ -46,19 +46,19 @@ public class Main {
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("es2.txt"))) {
 
-            for (Product product:listaProdotti) {
+            for (Product product : listaProdotti) {
                 writer.write(product.toString());
                 writer.newLine();
                 writer.write("---------------------");
                 writer.newLine();
-                }
+            }
 
-        }catch(IOException exception){
+        } catch (IOException exception) {
             throw new RuntimeException();
         }
 
-        try(FileReader fileReader = new FileReader("es2.txt");
-            BufferedReader bufferedReader = new BufferedReader(fileReader)){
+        try (FileReader fileReader = new FileReader("es2.txt");
+             BufferedReader bufferedReader = new BufferedReader(fileReader)) {
 
             String line;
 

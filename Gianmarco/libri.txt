@@ -1,1 +1,0 @@
-{1=Libro: 1', ISBN: 1', Autore: 1, 2=Libro: 2', ISBN: 2', Autore: 2, 3=Libro: 3', ISBN: 3', Autore: 3}
