@@ -6,5 +6,20 @@ package Ricorsione09_06;
  */
 
 public class Esercizio1 {
+    public static void main(String[] args) {
+        int[] array = {3, 4, 5, 7, 2, 9};
+
+        System.out.println();
+
+
+        public int trovaMinimo () {
+
+
+
+            return trovaMinimo;
+        }
+
+
+    }
 
 }
