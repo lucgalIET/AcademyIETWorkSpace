@@ -22,11 +22,11 @@ public class EserciziRicorsione09_06 {
         int[] array = {13, 444, 55, 76, 28, 99,125,2,3,65,843,45566};
 
         int[][] matrice = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        System.out.println(massimoRicorsivo(array, array.length - 1));
-        System.out.println(sommaRicorsiva(array, array.length - 1));
-        System.out.println(diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
-        System.out.println(interoPresente(array,array.length-1,99));
-        System.out.println(sommaPari(array,array.length-1));
+        System.out.println("Massimo ricorsivo "+ massimoRicorsivo(array, array.length - 1));
+        System.out.println("Somma ricorsiva" + sommaRicorsiva(array, array.length - 1));
+        System.out.println("Diagonale Ricorsiva"+ diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
+        System.out.println("è presente 99?"+interoPresente(array,array.length-1,99));
+        System.out.println("Somma Pari "+sommaPari(array,array.length-1));
     }
 
     public static int massimoRicorsivo(int[] array, int indice) {
