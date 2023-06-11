@@ -19,14 +19,16 @@ di numeri dispari (oppure pari)  presenti all’interno di un array
 
 public class EserciziRicorsione09_06 {
     public static void main(String[] args) {
-        int[] array = {13, 444, 55, 76, 28, 99,125,2,3,65,843,45566};
+        int[] array = {13, 444, 55, 76, 28, 99, 125, 2, 3, 65, 843, 45566};
 
         int[][] matrice = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        System.out.println("Massimo ricorsivo "+ massimoRicorsivo(array, array.length - 1));
-        System.out.println("Somma ricorsiva" + sommaRicorsiva(array, array.length - 1));
-        System.out.println("Diagonale Ricorsiva"+ diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
-        System.out.println("è presente 99?"+interoPresente(array,array.length-1,99));
-        System.out.println("Somma Pari "+sommaPari(array,array.length-1));
+        System.out.println("Massimo ricorsivo: " + massimoRicorsivo(array, array.length - 1));
+        System.out.println("Massimo iterativo: " + massimoIterativo(array));
+        System.out.println("Somma ricorsiva: " + sommaRicorsiva(array, array.length - 1));
+        System.out.println("Somma iterativa: " + sommaIterativa(array));
+        System.out.println("Diagonale Ricorsiva:" + diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
+        System.out.println("è presente 99? " + interoPresente(array, array.length - 1, 99));
+        System.out.println("Somma Pari: " + sommaPari(array, array.length - 1));
     }
 
     public static int massimoRicorsivo(int[] array, int indice) {
@@ -35,9 +37,27 @@ public class EserciziRicorsione09_06 {
         return Math.max(array[indice], num);
     }
 
+    public static int massimoIterativo(int[] array) {
+        int max = 0;
+        for (int num : array) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
+
     public static int sommaRicorsiva(int[] array, int indice) {
         if (indice == 0) return array[indice];
         return array[indice] + sommaRicorsiva(array, indice - 1);
+    }
+
+    public static int sommaIterativa(int[] array) {
+        int somma = 0;
+        for (int num : array) {
+            somma += num;
+        }
+        return somma;
     }
 
     public static int diagonaleRicorsiva(int[][] matrice, int i, int j) {
@@ -45,17 +65,17 @@ public class EserciziRicorsione09_06 {
         return matrice[i][j] + diagonaleRicorsiva(matrice, i - 1, j - 1);
     }
 
-    public static boolean interoPresente (int[] array, int indice,int numeroDaCercare){
+    public static boolean interoPresente(int[] array, int indice, int numeroDaCercare) {
         if (array[indice] == numeroDaCercare) return true;
-        if (indice==0)return false;
-        return interoPresente(array, indice - 1,99);
+        if (indice == 0) return false;
+        return interoPresente(array, indice - 1, 99);
     }
 
-    public static int sommaPari(int[] array, int indice){
+    public static int sommaPari(int[] array, int indice) {
         if (indice == 0) return array[indice];
 
-        if(array[indice]%2==0) return array[indice]+sommaPari(array,indice-1);
-        return sommaPari(array,indice-1);
+        if (array[indice] % 2 == 0) return array[indice] + sommaPari(array, indice - 1);
+        return sommaPari(array, indice - 1);
 
     }
 }
