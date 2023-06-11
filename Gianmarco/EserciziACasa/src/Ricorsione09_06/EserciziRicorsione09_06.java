@@ -94,6 +94,7 @@ public class EserciziRicorsione09_06 {
         for (int num : array) {
             if (num == 99) {
                 isPresent = true;
+                break;
             }
         }
         return isPresent;
