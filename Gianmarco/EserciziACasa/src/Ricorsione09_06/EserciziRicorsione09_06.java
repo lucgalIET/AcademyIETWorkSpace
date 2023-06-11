@@ -20,7 +20,7 @@ di numeri dispari (oppure pari)  presenti all’interno di un array
 public class EserciziRicorsione09_06 {
     public static void main(String[] args) {
         int[] array = {13, 444, 55, 76, 28, 99, 125, 2, 3, 65, 843, 45566};
-        int[] array2 = {1, 3, 5, 2, 2, 6};
+        int[] array2 = {100, 1, 2, 2, 6};
         int[][] matrice = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
         System.out.println("Massimo ricorsivo: " + massimoRicorsivo(array, array.length - 1));
@@ -31,7 +31,8 @@ public class EserciziRicorsione09_06 {
         System.out.println("Somma diagonale iterativa: " + diagonaleIterativa(matrice));
         System.out.println("99 presente ricorsivo: " + interoPresenteRicorsivo(array, array.length - 1, 99));
         System.out.println("99 presente iterativo: " + interoPresenteIterativo(array));
-        System.out.println("Somma Pari: " + sommaPariRicorsiva(array, array.length - 1));
+        System.out.println("Somma Pari ricorsiva: " + sommaPariRicorsiva(array2, array2.length - 1));
+        System.out.println("Somma pari iterativa: " + sommaPariIterativa(array2));
     }
 
     public static int massimoRicorsivo(int[] array, int indice) {
@@ -99,7 +100,13 @@ public class EserciziRicorsione09_06 {
     }
 
     public static int sommaPariRicorsiva(int[] array, int indice) {
-        if (indice == 0) return array[indice];
+        if (indice == 0) {
+            if(array[0]%2==0) {
+                return array[indice];
+            }else{
+                return 0;
+            }
+        }
 
         if (array[indice] % 2 == 0) return array[indice] + sommaPariRicorsiva(array, indice - 1);
         return sommaPariRicorsiva(array, indice - 1);
