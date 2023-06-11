@@ -17,12 +17,10 @@ di numeri dispari (oppure pari)  presenti all’interno di un array
 [BONUS] scrivere i rispettivi metodi iterativi
 */
 
-import java.nio.file.DirectoryStream;
-
 public class EserciziRicorsione09_06 {
     public static void main(String[] args) {
         int[] array = {13, 444, 55, 76, 28, 99, 125, 2, 3, 65, 843, 45566};
-
+        int[] array2 = {1, 3, 5, 2, 2, 6};
         int[][] matrice = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
         System.out.println("Massimo ricorsivo: " + massimoRicorsivo(array, array.length - 1));
@@ -32,8 +30,8 @@ public class EserciziRicorsione09_06 {
         System.out.println("Somma diagonale Ricorsiva: " + diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
         System.out.println("Somma diagonale iterativa: " + diagonaleIterativa(matrice));
         System.out.println("99 presente ricorsivo: " + interoPresenteRicorsivo(array, array.length - 1, 99));
-        System.out.println("99 presente iterativo: "+ interoPresenteIterativo(array));
-        System.out.println("Somma Pari: " + sommaPari(array, array.length - 1));
+        System.out.println("99 presente iterativo: " + interoPresenteIterativo(array));
+        System.out.println("Somma Pari: " + sommaPariRicorsiva(array, array.length - 1));
     }
 
     public static int massimoRicorsivo(int[] array, int indice) {
@@ -91,19 +89,31 @@ public class EserciziRicorsione09_06 {
     }
 
     public static boolean interoPresenteIterativo(int[] array) {
-        boolean isPresent=false;
+        boolean isPresent = false;
         for (int num : array) {
             if (num == 99) {
-                isPresent=true;
+                isPresent = true;
             }
-        }return isPresent;
+        }
+        return isPresent;
     }
 
-    public static int sommaPari(int[] array, int indice) {
+    public static int sommaPariRicorsiva(int[] array, int indice) {
         if (indice == 0) return array[indice];
 
-        if (array[indice] % 2 == 0) return array[indice] + sommaPari(array, indice - 1);
-        return sommaPari(array, indice - 1);
+        if (array[indice] % 2 == 0) return array[indice] + sommaPariRicorsiva(array, indice - 1);
+        return sommaPariRicorsiva(array, indice - 1);
+
+    }
+
+    public static int sommaPariIterativa(int[] array) {
+        int sommaPari = 0;
+        for (int num : array) {
+            if (num % 2 == 0) {
+                sommaPari += num;
+            }
+        }
+        return sommaPari;
 
     }
 }
