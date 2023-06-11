@@ -14,12 +14,13 @@ public class EsercizioScriviContenutiClasseLeggi {
 
     public static void main(String[] args) throws IOException {
 //        Product product = new Product();
+        EsercizioScriviContenutiClasseLeggi esercizioScriviContenutiClasseLeggi = new EsercizioScriviContenutiClasseLeggi();
         Map<String,Product> prodotti = new TreeMap<>();
         boolean inserisci = true;
         while(inserisci) {
-            double id = inserisciId();
-            String nome = inserisciNome();
-            int prezzo = inserisciPrezzo();
+            double id = esercizioScriviContenutiClasseLeggi.inserisciId();
+            String nome = esercizioScriviContenutiClasseLeggi.inserisciNome();
+            int prezzo = esercizioScriviContenutiClasseLeggi.inserisciPrezzo();
             prodotti.put(nome,new Product(id,nome,prezzo));
             System.out.println("Vuoi inserire un altro prodotto? (si/no)");
             Scanner scanner = new Scanner(System.in);
@@ -42,16 +43,18 @@ public class EsercizioScriviContenutiClasseLeggi {
 
 
     }}
-    private static double inserisciId(){
+    private double inserisciId(){
         boolean valoreCorretto=false;
         String valore="";
         while (!valoreCorretto){
 
             System.out.println("Inserici il valore dell'id del prodotto (deve contenere solo valori numerici)");
-            Scanner scanner = new Scanner(System.in);
-             valore = scanner.nextLine();
+            Scanner scanner1 = new Scanner(System.in);
+
+                valore =scanner1.nextLine();
+
             valoreCorretto = valore.matches("[0-9]+");
-            scanner.close();
+            scanner1.close();
             if (!valoreCorretto){
                 System.out.println("Il valore non contiene solo numeri!");
             }
@@ -59,16 +62,23 @@ public class EsercizioScriviContenutiClasseLeggi {
         }
 
         return  Double.parseDouble(valore);}
-    private static String inserisciNome(){
+    private String inserisciNome(){
         boolean valoreCorretto=false;
         String valore="";
+        Scanner scanner1 = new Scanner(System.in);
         while (!valoreCorretto){
 
-            System.out.println("Inserici il nome del prodotto (puo' contenere solo lettere e numeri)");
-            Scanner scanner = new Scanner(System.in);
-            valore = scanner.nextLine();
+            System.out.print("Inserici il nome del prodotto (puo' contenere solo lettere e numeri)");
+            scanner1.next();
+            while(scanner1.hasNextLine()){
+                valore =scanner1.nextLine();
+                // Switch condition here
+            }
+            valore =scanner1.nextLine();
+
+
             valoreCorretto = valore.matches("[a-zA-Z0-9]+");
-            scanner.close();
+            scanner1.close();
             if (!valoreCorretto){
                 System.out.println("Il valore non contiene solo lettere e numeri!");
             }
@@ -76,14 +86,16 @@ public class EsercizioScriviContenutiClasseLeggi {
         }
 
         return  valore;}
-    private static int inserisciPrezzo(){
+    private int inserisciPrezzo(){
         boolean valoreCorretto=false;
         String valore="";
         while (!valoreCorretto){
 
             System.out.println("Inserici il prezzi del prodotto (deve contenere solo valori numerici)");
             Scanner scanner = new Scanner(System.in);
-            valore = scanner.nextLine();
+            if (scanner.hasNext()){
+                valore = scanner.nextLine();}
+            else {valore = scanner.nextLine();}
             valoreCorretto = valore.matches("[0-9]+");
             scanner.close();
             if (!valoreCorretto){

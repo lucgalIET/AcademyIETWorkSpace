@@ -4,7 +4,7 @@ package esercizi.src.eserciziCasa.Es_8_6_23;
 //        Il programma chiede all'utente di inserire i dati di tre libri e li salva in una mappa di oggetti Book, utilizzando l'ISBN come chiave.
 //        Successivamente, scrivi i dati della mappa su un file di testo e leggi il file per estrarre e visualizzare i libri in base all'ISBN inserito dall'utente.
 public class Book {
-    private final int ISBN;
+    private int ISBN;
     private String title;
     private String author;
 
@@ -19,6 +19,10 @@ public class Book {
 
     public double getISBN() {
         return ISBN;
+    }
+
+    public void setISBN(int ISBN) {
+        this.ISBN = ISBN;
     }
 
     public String getTitle() {
