@@ -26,6 +26,7 @@ public class EserciziRicorsione09_06 {
         System.out.println(sommaRicorsiva(array, array.length - 1));
         System.out.println(diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
         System.out.println(interoPresente(array,array.length-1,99));
+        System.out.println(sommaPari(array,array.length-1));
     }
 
     public static int massimoRicorsivo(int[] array, int indice) {
@@ -50,4 +51,11 @@ public class EserciziRicorsione09_06 {
         return interoPresente(array, indice - 1,99);
     }
 
+    public static int sommaPari(int[] array, int indice){
+        if (indice == 0) return array[indice];
+
+        if(array[indice]%2==0) return array[indice]+sommaPari(array,indice-1);
+        return sommaPari(array,indice-1);
+
+    }
 }
