@@ -16,12 +16,15 @@ public class Esercizio5 {
         System.out.println(sommaPariR(arr, arr.length - 1));
         System.out.println(sommaPariI(arr));
     }
+
     //VERSIONE RICORSIVA
     static public int sommaPariR(int[] arr, int index) {
         if (index == -1) return 0;
-        if (arr[index] % 2 == 0) return arr[index] + sommaPariR(arr, index - 1);
-        return sommaPariR(arr, index - 1);
+//        if (arr[index] % 2 == 0) return arr[index] + sommaPariR(arr, index - 1);
+//        return sommaPariR(arr, index - 1);
+        return (arr[index] % 2 == 0) ? arr[index] + sommaPariR(arr, index - 1) : sommaPariR(arr, index - 1);
     }
+
     //VERSIONE ITERATIVA
     static public int sommaPariI(int[] arr) {
         int somma = 0;
