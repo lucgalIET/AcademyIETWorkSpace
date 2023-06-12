@@ -8,7 +8,7 @@ Scrivere un metodo ricorsivo che, dato un array di interi, restituisca il valore
 public class Esercizio1 {
     public static void main(String[] args) {
 
-        int[] array = {10, 54, 86, 895, 123, 2, 365, 447, 41};
+        int[] array = {5, 54, 86, 895, 123, 2, 365, 447, 41};
 
         System.out.println("il valore massimo presente nell' array in modo ricorsico è " + cercaMassimoRicorsivo(array, array.length - 1));
         System.out.println("il valore minimo presente nell'array in modo ricorsivo è " + cercaMinimoRicorsivoArray(array, array.length - 1));

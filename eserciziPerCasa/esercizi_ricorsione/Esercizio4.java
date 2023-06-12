@@ -14,7 +14,7 @@ public class Esercizio4 {
 
 
     }
-
+    //bonus versione iterativa
     private static boolean verificaElementoIterativo(int[] array, int elem) {
 
         for(int i = 0; i < array.length; i++){
@@ -32,6 +32,6 @@ public class Esercizio4 {
         return verificaElementoRicorsiva(array, indice -1, elem);
     }
 
-    //bonus versione iterativa
+
 
 }

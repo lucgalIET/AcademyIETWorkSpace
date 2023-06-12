@@ -17,9 +17,10 @@ public class Esercizio5 {
     private static int sommaDispariRicorsivo(int[] array, int indice) {
 
         if(indice == -1) return 0;
-        if(array[indice] %2 != 0) return array[indice] + sommaDispariRicorsivo(array, indice - 1);
-
-        return sommaDispariRicorsivo(array, indice -1);
+//        if(array[indice] %2 != 0) return array[indice] + sommaDispariRicorsivo(array, indice - 1);
+//
+//        return sommaDispariRicorsivo(array, indice -1);
+       return (array[indice] %2 != 0) ? (array[indice] + sommaDispariRicorsivo(array, indice - 1)) : (sommaDispariRicorsivo(array, indice -1));
     }
 
     private static int sommaPariRicorsivo(int[] array, int indice) {
