@@ -19,18 +19,22 @@ di numeri dispari (oppure pari)  presenti all’interno di un array
 
 public class EserciziRicorsione09_06 {
     public static void main(String[] args) {
-        int[] array = {13, 444, 55, 76, 28, 99, 125, 2, 3, 65, 843, 45566};
+        int[] array = {45566, 444, 55, 76, 28, 99, 125, 2, 3, 65, 843};
         int[] array2 = {100, 1, 2, 2, 6};
         int[][] matrice = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
         System.out.println("Massimo ricorsivo: " + massimoRicorsivo(array, array.length - 1));
         System.out.println("Massimo iterativo: " + massimoIterativo(array));
+
         System.out.println("Somma ricorsiva: " + sommaRicorsiva(array, array.length - 1));
         System.out.println("Somma iterativa: " + sommaIterativa(array));
+
         System.out.println("Somma diagonale Ricorsiva: " + diagonaleRicorsiva(matrice, matrice.length - 1, matrice.length - 1));
         System.out.println("Somma diagonale iterativa: " + diagonaleIterativa(matrice));
+
         System.out.println("99 presente ricorsivo: " + interoPresenteRicorsivo(array, array.length - 1, 99));
         System.out.println("99 presente iterativo: " + interoPresenteIterativo(array));
+
         System.out.println("Somma Pari ricorsiva: " + sommaPariRicorsiva(array2, array2.length - 1));
         System.out.println("Somma pari iterativa: " + sommaPariIterativa(array2));
     }
@@ -86,7 +90,8 @@ public class EserciziRicorsione09_06 {
     public static boolean interoPresenteRicorsivo(int[] array, int indice, int numeroDaCercare) {
         if (array[indice] == numeroDaCercare) return true;
         if (indice == 0) return false;
-        return interoPresenteRicorsivo(array, indice - 1, 99);
+
+        return interoPresenteRicorsivo(array, indice - 1, numeroDaCercare);
     }
 
     public static boolean interoPresenteIterativo(int[] array) {
@@ -102,9 +107,9 @@ public class EserciziRicorsione09_06 {
 
     public static int sommaPariRicorsiva(int[] array, int indice) {
         if (indice == 0) {
-            if(array[0]%2==0) {
+            if (array[0] % 2 == 0) {
                 return array[indice];
-            }else{
+            } else {
                 return 0;
             }
         }
