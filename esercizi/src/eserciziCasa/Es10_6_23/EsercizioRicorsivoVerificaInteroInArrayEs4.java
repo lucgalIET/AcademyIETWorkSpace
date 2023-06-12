@@ -5,7 +5,7 @@ public class EsercizioRicorsivoVerificaInteroInArrayEs4 {
 
 
     int[]array={9,4,2,5,6,7,4,5,6};
-        System.out.println("il valore è presente nell'array: "+ ricorsivoSomma(1,array,array.length-1));
+        System.out.println("Il valore è presente nell'array: "+ ricorsivoSomma(1,array,array.length-1));
 
 }
     public static boolean ricorsivoSomma(int valore, int[] array,int lenght){
