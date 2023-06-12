@@ -95,8 +95,8 @@ public class EsCasa0906 {
     }
 
     public static boolean cercaElementoRicorsivo(int[] array, int elem, int index) {
-        if (index == 0 && !(array[index] == elem)) return false;
-        else if (array[index] == elem) return true;
+        if (array[index] == elem) return true;
+        else if (index == 0) return false;
         return cercaElementoRicorsivo(array, elem, index - 1);
     }
 
