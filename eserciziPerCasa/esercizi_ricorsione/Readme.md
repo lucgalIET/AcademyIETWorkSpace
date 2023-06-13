@@ -8,6 +8,8 @@
 presenti all’interno di un array
 6) Implementa una funzione iterativa e ricorsiva in Java che stampi i primi 'n' numeri della serie di Fibonacci.
 7) Verificare se un numero in input è primo sia iterativamente che ricorsivcamente
+8) Metodo ricorsivo e iterativo che calcola il massimo comune divisore di due numeri interi
+9) 
 --------------------------------------------------------------------------------------------------------------------------------------
 [BONUS] scrivere i rispettivi metodi iterativi
 
