@@ -6,6 +6,8 @@
 4) Scrivere un metodo boolean che verifica se un intero è contenuto in un array
 5) Scrivere un programma che restituisca la somma corrispondente alla totalità di numeri dispari (oppure pari) 
 presenti all’interno di un array
+6) Implementa una funzione iterativa e ricorsiva in Java che stampi i primi 'n' numeri della serie di Fibonacci.
+7) 
 --------------------------------------------------------------------------------------------------------------------------------------
 [BONUS] scrivere i rispettivi metodi iterativi
 
