@@ -6,7 +6,7 @@ public class Ricorsione {
     // a ab abc b bc c
 
     public static void main(String[] args) {
-        String stringa = "abcdfghi";
+        String stringa = "abcdef";
         //sottoMassi(stringa);
         sottoMassiRicorsiva(stringa);
     }
@@ -28,15 +28,19 @@ public class Ricorsione {
         if (s.isEmpty()) {
             System.out.println(t);
         } else {
+            String substring = s.substring(s.length() - t.length());
             if (s.length() == 1) {
-                if (t.length() > 0) {
-                    t = s.substring(s.length() - t.length(), s.length());
+                if (t.length() > 1) {
+                    t = substring;
                     System.out.println(t);
-                    sottoMassiRicorsivaTailR(s, s.substring(s.length() - t.length(), s.length() - 1));
+                    sottoMassiRicorsivaTailR(s, s.substring(s.length() - t.length(), 0));
+                }else{
+                    t = substring;
+                    sottoMassiRicorsivaTailR("",t);
                 }
-            } else if (s.length() >= 2) {
+            } else {
                 if (t.length() > 0) {
-                    t = s.substring(s.length() - t.length(), s.length());
+                    t = substring;
                     System.out.println(t);
                     sottoMassiRicorsivaTailR(s, s.substring(s.length() - t.length(), s.length() - 1));
                 } else {
