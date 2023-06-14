@@ -2,7 +2,7 @@ package ListaRicorsiva;
 
 /*
 
-IN una lista concatenata ogni elemento contiene
+In una lista concatenata ogni elemento contiene
 un riferimento all'elemento successivo
 
  */
