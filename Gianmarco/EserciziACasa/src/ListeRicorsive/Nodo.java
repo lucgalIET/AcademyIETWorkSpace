@@ -1,6 +1,6 @@
 package ListeRicorsive;
 
-import org.w3c.dom.NodeList;
+
 
 public class Nodo {
     private int value;
@@ -10,7 +10,6 @@ public class Nodo {
         this.value = value;
         this.nodoSuccessivo = null;
     }
-
 
     public int getValue() {
         return value;
@@ -24,7 +23,12 @@ public class Nodo {
         return nodoSuccessivo;
     }
 
-    public void setNodoSuccessivo(Nodo nodo) {
-        this.nodoSuccessivo = nodo;
+    public void setNodoSuccessivo(Nodo nodoSuccessivo) {
+        this.nodoSuccessivo = nodoSuccessivo;
+    }
+
+    @Override
+    public String toString() {
+        return "Nodo:" + value + " "+ nodoSuccessivo;
     }
 }

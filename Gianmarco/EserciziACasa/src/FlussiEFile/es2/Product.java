@@ -1,4 +1,4 @@
-package es2;
+package FlussiEFile.es2;
 
 /*
 Scrivi un programma Java che crea una classe Product con

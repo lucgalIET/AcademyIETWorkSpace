@@ -1,7 +1,5 @@
 package es3;
 
-import es2.Product;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;

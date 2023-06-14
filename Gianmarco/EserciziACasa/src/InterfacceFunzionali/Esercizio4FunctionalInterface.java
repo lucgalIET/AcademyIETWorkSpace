@@ -1,4 +1,5 @@
-package EserciziCasa_04_06_23;
+package InterfacceFunzionali;
+
 /*
 4.Implementa un Runnable che esegue
 un conteggio progressivo da 1 a 10.

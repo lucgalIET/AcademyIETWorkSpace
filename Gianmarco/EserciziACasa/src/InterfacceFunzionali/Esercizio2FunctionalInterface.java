@@ -1,4 +1,4 @@
-package EserciziCasa_04_06_23;
+package InterfacceFunzionali;
 
 import java.util.Random;
 import java.util.function.Supplier;
