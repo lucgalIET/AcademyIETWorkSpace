@@ -1,4 +1,6 @@
-package eserciziPerCasa.esercizi_ricorsione.ListeRicorsive;
+package eserciziPerCasa.ListeRicorsive.lista1;
+
+
 
 public class NodoMain {
     //Implementa una funzione ricorsiva in Java che prenda in

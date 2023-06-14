@@ -1,9 +1,9 @@
 package eserciziPerCasa.esercizi_flussi_file.eserciio2;
 
 public class Product {
-    private Integer id;
-    private String name;
-    private Double price;
+    private final Integer id;
+    private final String name;
+    private final Double price;
 
     public Product(Integer id, String name, Double price) {
         this.id = id;
@@ -24,12 +24,11 @@ public class Product {
     }
 
     public String toString(){
-        StringBuilder sb=new StringBuilder();
-        sb.append("prodotto [ ");
-        sb.append("Nome: " + name);
-        sb.append(" Prezzo: " + price);
-        sb.append(" ]");
-        return sb.toString();
+        String sb = "prodotto [ " +
+                "Nome: " + name +
+                " Prezzo: " + price +
+                " ]";
+        return sb;
 
     }
 }

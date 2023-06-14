@@ -2,7 +2,7 @@ package eserciziPerCasa.thread;
 import java.util.concurrent.Semaphore;
 
     public class Connection {
-        private Semaphore semaforo;
+        private final Semaphore semaforo;
         private int connections=0;
         private int maxConnections;
 

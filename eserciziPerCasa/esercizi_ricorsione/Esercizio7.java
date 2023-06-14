@@ -22,7 +22,7 @@ public class Esercizio7 {
         if(n==0) return false;
         if(count == 1) return true;
 
-        return (n%count !=0) ? primoR(n, count - 1) : false;
+        return n % count != 0 && primoR(n, count - 1);
 
     }
 

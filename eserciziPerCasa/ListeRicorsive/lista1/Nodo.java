@@ -1,4 +1,4 @@
-package eserciziPerCasa.esercizi_ricorsione.ListeRicorsive;
+package eserciziPerCasa.ListeRicorsive.lista1;
 
 public class Nodo<E> {
     private E value;
@@ -24,9 +24,4 @@ public class Nodo<E> {
     public void setNodoSuccessivo(Nodo<E> nodo) {
         this.nodoSuccessivo = nodo;
     }
-
-
-
-    //Implementa una funzione ricorsiva in Java che prenda in
-    // input una lista di elementi e restituisca una nuova lista con gli elementi invertiti rispetto all'originale.
 }

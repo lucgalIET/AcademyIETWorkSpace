@@ -1,9 +1,9 @@
 package eserciziPerCasa.esercizi_flussi_file.esercizio3;
 
 public class Book {
-    private Integer isbn;
-    private String title;
-    private String author;
+    private final Integer isbn;
+    private final String title;
+    private final String author;
 
     public Book(Integer isbn, String title, String author) {
         this.isbn = isbn;
@@ -24,12 +24,11 @@ public class Book {
     }
 
     public String toString(){
-        StringBuilder sb = new StringBuilder();
-        sb.append("Book[ ");
-        sb.append("Titolo: " + title + " ");
-        sb.append("Autore: " + author );
-        sb.append(" ]");
+        String sb = "Book[ " +
+                "Titolo: " + title + " " +
+                "Autore: " + author +
+                " ]";
 
-        return sb.toString();
+        return sb;
     }
 }
