@@ -7,13 +7,12 @@ package Ricorsione09_06;
 public class es4_12_06 {
     public static void main(String[] args) {
         System.out.println(calcoloPotenzaRicorsivo(3, 3));
-        System.out.println(calcoloPotenzaIterativo(11, 4));
+        System.out.println(calcoloPotenzaIterativo(3, 3));
 
     }
 
     public static int calcoloPotenzaRicorsivo(int numero, int potenza) {
         if (potenza == 0) return 1;
-
         return numero * calcoloPotenzaRicorsivo(numero, potenza - 1);
     }
 
