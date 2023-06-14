@@ -68,11 +68,11 @@ Implementa una funzione ricorsiva in Java che prenda in input due liste di inter
 nodi e restituisca una nuova lista che sia la concatenazione delle due liste di input. Testa la tua funzione utilizzando
 diverse combinazioni di liste di interi.
  */
-    public static String concatenazioneNodi(Nodo<Integer> nodo1, Nodo<Integer> nodo2){
-        if(nodo1==null && nodo2==null) return "";
+    public static Nodo<Integer> concatenazioneNodi(Nodo<Integer> nodo1, Nodo<Integer> nodo2){
+        if(nodo1==null) return nodo2;
 
-        String nodoConc= ""+ nodo1.getValore() + nodo2.getValore();
-        return nodoConc+concatenazioneNodi(nodo1.getNodoSuccessivo(),nodo2.getNodoSuccessivo());
+        nodo1.setNodoSuccessivo(concatenazioneNodi(nodo1.getNodoSuccessivo(),nodo2));
+        return nodo1;
     }
 
     /*
