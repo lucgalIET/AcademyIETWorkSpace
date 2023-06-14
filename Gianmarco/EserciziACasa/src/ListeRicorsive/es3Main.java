@@ -1,4 +1,5 @@
 package ListeRicorsive;
+
 /*
 Esercizio 3: Concatenazione di due liste ricorsive
 
@@ -26,19 +27,19 @@ public class es3Main {
         nodoB1.setNodoSuccessivo(nodoB2);
         nodoB2.setNodoSuccessivo(nodoB3);
 
-        Nodo risultato = nodiConcatenati(nodoA1,nodoB1);
+        Nodo risultato = nodiConcatenati(nodoA1, nodoB1);
 
         System.out.println(risultato);
 
 
     }
-    public static Nodo nodiConcatenati(Nodo nodoA1,Nodo nodoB1){
-        if(nodoA1==null)return nodoB1;
 
-        nodoA1.setNodoSuccessivo(nodiConcatenati(nodoA1.getNodoSuccessivo(),nodoB1));
+    public static Nodo nodiConcatenati(Nodo nodoA1, Nodo nodoB1) {
+        if (nodoA1 == null) return nodoB1;
+
+        nodoA1.setNodoSuccessivo(nodiConcatenati(nodoA1.getNodoSuccessivo(), nodoB1));
         return nodoA1;
     }
-
 
 
 }
