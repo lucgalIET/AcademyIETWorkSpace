@@ -23,4 +23,9 @@ public class Nodo<T>{
     public void setNodoSuccessivo(Nodo<T> nodoSuccessivo) {
         this.nodoSuccessivo = nodoSuccessivo;
     }
+
+    @Override
+    public String toString() {
+        return   valore + ""+ nodoSuccessivo;
+    }
 }
