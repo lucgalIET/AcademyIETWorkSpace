@@ -30,12 +30,12 @@ public class Main {
         System.out.println(es.sommaLista(nodo11));
 
         //ESERCIZIO 2
-//        System.out.println(es.ordineCrescente(nodo1));
-//        System.out.println(es.ordineCrescente(nodo11));
-//
-//        //ESERCIZIO 3
-//        es.unioneListe(nodo1, nodo11);
-//        System.out.println(es.sommaLista(nodo1));
+        System.out.println(es.ordineCrescente(nodo1));
+        System.out.println(es.ordineCrescente(nodo11));
+
+        //ESERCIZIO 3
+        es.unioneListe(nodo1, nodo11);
+        System.out.println(es.sommaLista(nodo1));
 
         //ESERCIZIO 4
         NodoString nodoS1 = new NodoString("Ciao");
@@ -47,6 +47,6 @@ public class Main {
         nodoS2.setNextElement(nodoS3);
         nodoS3.setNextElement(nodoS4);
 
-//        System.out.println(es.concatenaStringhe(nodoS1));
+        System.out.println(es.concatenaStringhe(nodoS1));
     }
 }
