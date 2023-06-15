@@ -5,7 +5,6 @@ package perCasa.Esercizi_14_06_2023;
 //nodi e restituisca una nuova lista che sia la concatenazione delle due liste di input. Testa la tua funzione utilizzando
 //diverse combinazioni di liste di interi.
 
-//SBAGLIATO!!
 public class Esercizio3 {
 
     public static void main(String[] args) {
@@ -36,13 +35,10 @@ public class Esercizio3 {
 
     }
 
-    public static void concatena(Nodo<Integer> nodo1, Nodo<Integer> nodo2){
-        if(nodo1.getNodoSuccessivo() == null) {
-            nodo1.setNodoSuccessivo(nodo2);
-            concatena(nodo1.getNodoSuccessivo(), nodo2.getNodoSuccessivo());
-        }
-        if(nodo1 == null) return;
-        concatena(nodo1.getNodoSuccessivo(), nodo2);
+    public static Nodo<Integer> concatena(Nodo<Integer> nodo1, Nodo<Integer> nodo2){
+        if(nodo1==null) return nodo2;
+        nodo1.setNodoSuccessivo(concatena(nodo1.getNodoSuccessivo(),nodo2));
+        return nodo1;
     }
 
     public static void stampaNodi(Nodo<Integer> nodo){
