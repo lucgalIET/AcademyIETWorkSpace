@@ -1,4 +1,4 @@
-package EsercizioPianeti;
+package eserciziopianeti;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -6,8 +6,6 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /*creare un programma java per calcolare alcune informazioni su diversi corpi celesti, tra cui pianeti terrestri e pianeti gassosi.
 

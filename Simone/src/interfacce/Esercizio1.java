@@ -1,8 +1,7 @@
-package Interface;
+package interfacce;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class Esercizio1 {
         public static void main(String[] args) {
