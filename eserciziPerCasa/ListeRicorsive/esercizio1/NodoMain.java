@@ -20,7 +20,7 @@ public class NodoMain {
 
         stampaNodi(nodo1);
         System.out.println();
-        System.out.println("La somma degli elementi della lista è " + sommaLista(nodo1, 0));
+        System.out.println("La somma degli elementi della lista è " + sommaLista(nodo1));
 
     }
 
@@ -31,11 +31,11 @@ public class NodoMain {
     }
 
 
-    public static Integer sommaLista(Nodo nodo, Integer somma){
+    public static int sommaLista(Nodo nodo){
 
-        if(nodo==null) return 0;
+        if(nodo == null) return 0;
 
-        return nodo.getValue() + sommaLista(nodo.getNext(), somma += nodo.getValue());
+        return nodo.getValue() + sommaLista(nodo.getNext());
     }
 
 

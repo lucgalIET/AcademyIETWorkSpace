@@ -6,7 +6,7 @@ e restituisca la somma di tutti gli elementi nella lista. Testa la tua funzione 
 
  */
 public class Nodo {
-    private Integer value;
+    private int value;
     private Nodo next;
 
     public Nodo(int value) {
@@ -14,11 +14,11 @@ public class Nodo {
         this.next = null;
     }
 
-    public Integer getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(Integer value) {
+    public void setValue(int value) {
         this.value = value;
     }
 

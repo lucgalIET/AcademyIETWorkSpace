@@ -27,12 +27,12 @@ public class NodoMain {
 
 
     public static boolean verificaOrdinato(Nodo nodo){
-        if(nodo.getNodoSuccessivo()==null) return true;
+        if(nodo.getNodoSuccessivo() == null) return true;
 
-        if(nodo.getValue()<=nodo.getNodoSuccessivo().getValue()){
+        if(nodo.getValue() <= nodo.getNodoSuccessivo().getValue())
             return verificaOrdinato(nodo.getNodoSuccessivo());
-        }else {
+        else
             return false;
-        }
+
     }
 }

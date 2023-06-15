@@ -28,9 +28,10 @@ public class NodoMain {
     }
 
     public static Nodo concatenazioneNodi(Nodo nodo1, Nodo nodo6){
-        if(nodo1==null) return nodo6;
+        if(nodo1 == null) return nodo6;
 
         nodo1.setNodoSuccessivo(concatenazioneNodi(nodo1.getNodoSuccessivo(),nodo6));
+
         return nodo1;
     }
 

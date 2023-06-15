@@ -10,8 +10,8 @@ public class NodoMain {
     public static void main(String[] args) {
 
         Nodo<String> nodo1=new Nodo<>("Buongiorno");
-        Nodo<String> nodo2=new Nodo<>("a");
-        Nodo<String> nodo3=new Nodo<>("tutti");
+        Nodo<String> nodo2=new Nodo<>("mondo");
+        Nodo<String> nodo3=new Nodo<>("crudele!");
 
         nodo1.setNodoSuccessivo(nodo2);
         nodo2.setNodoSuccessivo(nodo3);
@@ -22,7 +22,8 @@ public class NodoMain {
     public static String concatenazioneString(Nodo<String> nodo){
         if(nodo == null) return" ";
 
-        String concat = nodo.getValore()+" "+concatenazioneString(nodo.getNodoSuccessivo());
+        String concat = nodo.getValore() + " " + concatenazioneString(nodo.getNodoSuccessivo());
+
         return concat;
     }
 }
