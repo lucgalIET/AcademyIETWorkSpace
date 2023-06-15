@@ -1,5 +1,4 @@
 package V;
-
 import java.util.concurrent.Semaphore;
 
 /*
@@ -8,13 +7,13 @@ Ogni squadra è composta da 4 corridori. Ogni corridore deve attraversare una se
 critica rappresentata da un tratto di 25 metri.
 
  */
-public class RunnerMain implements Runnable {
+public class GaraCentoMetri implements Runnable {
     private static Semaphore semaphore1 = new Semaphore(1);
     private int metriPercorsiA;
     private int metriPercorsiB;
     private String team;
 
-    public RunnerMain() {
+    public GaraCentoMetri() {
         this.metriPercorsiA = 0;
         this.metriPercorsiB = 0;
 
@@ -28,7 +27,7 @@ public class RunnerMain implements Runnable {
 
 
     public static void main(String[] args) {
-    Thread[] threadA1=new Thread[8];
+        Thread[] threadA1=new Thread[8];
 
     }
 }
