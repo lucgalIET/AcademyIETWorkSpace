@@ -6,7 +6,7 @@ public class Ricorsione {
     // a ab abc b bc c
 
     public static void main(String[] args) {
-        String stringa = "abcdef";
+        String stringa = "abc";
         //sottoMassi(stringa);
         sottoMassiRicorsiva(stringa);
     }
