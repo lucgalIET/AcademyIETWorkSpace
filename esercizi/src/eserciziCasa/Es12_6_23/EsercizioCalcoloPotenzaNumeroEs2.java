@@ -3,14 +3,14 @@ package esercizi.src.eserciziCasa.Es12_6_23;
 public class EsercizioCalcoloPotenzaNumeroEs2 {
     public static void main(String[] args) {
 
-            int base = 5, x = 3;
-            System.out.println ("Required Power is " + potenza(base, x));
+            int base = 5, esponente = 3;
+            System.out.println ("La potenza calcolata è " + potenza(base, esponente));
         }
 
-        static int potenza(int base, int x)
+        static int potenza(int base, int esponente)
         {
-            if (x == 0)     //caso base
+            if (esponente == 0)     //caso base
                 return 1;
-            return (base * potenza(base, x - 1));
+            return (base * potenza(base, esponente - 1));
         }
     }
