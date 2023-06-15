@@ -22,19 +22,9 @@ public class NodoMain {
        System.out.println();
        System.out.println("La somma degli elementi della lista è " + sommaLista(nodo1));
 
-       Lista lista = new Lista();
-       inserisciElemento(lista,90);
-
 
     }
 
-    public static void inserisciElemento(Lista lista, int value){
-        Nodo nodo = new Nodo(80);
-        if(lista.getNext() == null)
-            lista.setNext(nodo);
-        inserisciElemento(lista.getNext(), value);
-
-    }
 
     public static void stampaNodi(Nodo nodo){
         if(nodo == null) return;
