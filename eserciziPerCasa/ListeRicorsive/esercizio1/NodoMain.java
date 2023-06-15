@@ -18,9 +18,21 @@ public class NodoMain {
        nodo3.setNext(nodo4);
        nodo4.setNext(nodo5);
 
-        stampaNodi(nodo1);
-        System.out.println();
-        System.out.println("La somma degli elementi della lista è " + sommaLista(nodo1));
+       stampaNodi(nodo1);
+       System.out.println();
+       System.out.println("La somma degli elementi della lista è " + sommaLista(nodo1));
+
+       Lista lista = new Lista();
+       inserisciElemento(lista,90);
+
+
+    }
+
+    public static void inserisciElemento(Lista lista, int value){
+        Nodo nodo = new Nodo(80);
+        if(lista.getNext() == null)
+            lista.setNext(nodo);
+        inserisciElemento(lista.getNext(), value);
 
     }
 
