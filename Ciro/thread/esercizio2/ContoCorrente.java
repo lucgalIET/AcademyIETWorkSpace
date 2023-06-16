@@ -11,7 +11,7 @@ public class ContoCorrente {
 
     public ContoCorrente(){
         this.semaphore = new Semaphore(1);
-        saldoConto = 500;// apro un conto corrente con almeno 500€ disponibili
+        saldoConto = 1000;// apro un conto corrente con almeno 1000€ disponibili
     }
 
     public synchronized void versamento(int soldi){
