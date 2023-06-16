@@ -34,6 +34,8 @@ public class GaraCentoMetri implements Runnable {
 
 /*
 
+NON FUNZIONA!
+
 import java.util.concurrent.Semaphore;
 
 
