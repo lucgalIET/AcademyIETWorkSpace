@@ -7,13 +7,13 @@ package marcoMacri.src.eserciziCasa.Es14_6_23;
 public class Es4 {
     static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) {
-        Nodo nodo1 = new Nodo<String>("ciao");
-        Nodo nodo2 = new Nodo<String>("come");
+        Nodo<String> nodo1 = new Nodo<>("ciao");
+        Nodo<String> nodo2 = new Nodo<>("come");
 
-        Nodo nodo3 = new Nodo<String>("stai");
+        Nodo<String> nodo3 = new Nodo<>("stai");
 
-        Nodo nodo4 = new Nodo<String>("tutto");
-        Nodo nodo5 = new Nodo<String>("bene?");
+        Nodo<String> nodo4 = new Nodo<>("tutto");
+        Nodo<String> nodo5 = new Nodo<>("bene?");
         nodo1.setNodoSuccessivo(nodo2);
         nodo2.setNodoSuccessivo(nodo3);
         nodo3.setNodoSuccessivo(nodo4);
@@ -21,9 +21,9 @@ public class Es4 {
         nodo5.setNodoSuccessivo(null);
         System.out.println("La somma delle stringhe contenute nei nodi è: "+ sommaElementiListaNodo(nodo1));
     }
-    public static String sommaElementiListaNodo(Nodo<Integer> nodo){
+    public static String sommaElementiListaNodo(Nodo<String> nodo){
         if(nodo==null)return sb.toString();
-        sb.append(nodo.getValore()+" ");
+        sb.append(nodo.getValore()).append(" ");
         return sommaElementiListaNodo(nodo.getNodoSuccessivo());
     }
 }

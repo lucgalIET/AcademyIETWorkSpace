@@ -20,7 +20,7 @@ public class Es3 {
         nodo4.setNodoSuccessivo(nodo5);
         nodo5.setNodoSuccessivo(null);
 
-        Nodo nodo1b = new Nodo<Integer>(1);
+        Nodo nodo1b = new Nodo<Integer>(7);
         Nodo nodo2b= new Nodo<Integer>(2);
 
         Nodo nodo3b = new Nodo<Integer>(6);
@@ -42,16 +42,15 @@ public class Es3 {
     public static Nodo<Integer> concatenaListe(Nodo<Integer> nodo,Nodo<Integer> nodo1){
 
 
-        if(i==0) {nodo3 =nodo;}
+        if(i==0) nodo3 = nodo;
         i++;
-        if (nodo1==null){
-            return nodo;}
+        if (nodo1==null) return nodo;
         if(nodo.getNodoSuccessivo()==null) {
             nodo.setNodoSuccessivo(nodo1);
-
             return nodo3;
         }
-        return concatenaListe(nodo.getNodoSuccessivo(),nodo1);}
+        return concatenaListe(nodo.getNodoSuccessivo(),nodo1);
+    }
     public static int stampaElementiListaNodo(Nodo<Integer> nodo){
         if(nodo==null){
             System.out.println(" ");
