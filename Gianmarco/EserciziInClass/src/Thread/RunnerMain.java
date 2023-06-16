@@ -1,4 +1,5 @@
 package Thread;
+
 import java.util.concurrent.Semaphore;
 
 /*
@@ -7,6 +8,7 @@ Ogni squadra è composta da 4 corridori. Ogni corridore deve attraversare una se
 critica rappresentata da un tratto di 25 metri.
 
  */
+/*
 public class GaraCentoMetri implements Runnable {
     private static Semaphore semaphore1 = new Semaphore(1);
     private int metriPercorsiA;
@@ -31,18 +33,20 @@ public class GaraCentoMetri implements Runnable {
 
     }
 }
+*/
+
+
+
+
+
+
+
 
 /*
-
-NON FUNZIONA!
-
-import java.util.concurrent.Semaphore;
-
-
 Scrivi un programma in Java che simuli una corsa di 100 metri tra 2 squadre, A e B.
 Ogni squadra è composta da 4 corridori. Ogni corridore deve attraversare una sezione
 critica rappresentata da un tratto di 25 metri.
-
+*/
 
 public class RunnerMain implements Runnable {
     private static Semaphore semaphore = new Semaphore(1);
@@ -67,7 +71,7 @@ public class RunnerMain implements Runnable {
                 } else if (team.equals("B")) {
                     metriPercorsiB++;
                 }
-                System.out.println("Corridore " + team + " ha percorso " + (metriPercorsiA + metriPercorsiB) + " metri.");
+                System.out.println("Corridore " + team + " ha percorso " + (metriPercorsiA +" " + metriPercorsiB) + " metri.");
             }
             semaphore.release();
         } catch (InterruptedException e) {
@@ -88,15 +92,6 @@ public class RunnerMain implements Runnable {
             threadB[i].start();
         }
 
-        for (int i = 0; i < 4; i++) {
-            try {
-                threadA[i].join();
-                threadB[i].join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
         System.out.println("La corsa è terminata");
 
         if (metriPercorsiA > metriPercorsiB) {
@@ -110,4 +105,3 @@ public class RunnerMain implements Runnable {
 }
 
 
- */
