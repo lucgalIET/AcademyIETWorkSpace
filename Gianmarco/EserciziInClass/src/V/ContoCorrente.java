@@ -54,7 +54,6 @@ public class ContoCorrente {
             e.printStackTrace();
         } finally {
             semaphore.release();
-
         }
     }
 
@@ -72,6 +71,4 @@ public class ContoCorrente {
         threadDeposito.start();
         threadPrelievo.start();
     }
-
-
 }
