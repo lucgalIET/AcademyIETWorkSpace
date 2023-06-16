@@ -10,7 +10,7 @@ Utilizza sia un oggetto di blocco che il modificatore synchronized per sincroniz
 public class ContoCorrente {
 
     private Semaphore semaforo;
-    private int soldi=1000;
+    private static int soldi=1000;
 
     public ContoCorrente() {
         this.semaforo = new Semaphore(1);
