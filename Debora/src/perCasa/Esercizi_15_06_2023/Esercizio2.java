@@ -14,17 +14,19 @@ public class Esercizio2 {
     static class Prelievo implements Runnable {
         @Override
         public void run() {
-            for (int i = 0; i < 5; i++) {
-                synchronized (lock) {
-                    Random rand = new Random();
-                    int cifra = rand.nextInt(1,100);
-                    contoCorrente -= cifra;
-                    System.out.println("Prelievo "+ cifra+ " euro eseguito. Saldo totale: " + contoCorrente + " da " + Thread.currentThread().getName());
-                    try {
-                        Thread.sleep(2000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
+            if(contoCorrente == 0){
+                System.out.println("Non puoi prelevare, non hai abbastanza soldi!");
+                return;
+            }
+            synchronized (lock) {
+                Random rand = new Random();
+                int cifra = rand.nextInt(1, 100);
+                contoCorrente -= cifra;
+                System.out.println("Prelievo " + cifra + " euro eseguito. Saldo totale: " + contoCorrente + " da " + Thread.currentThread().getName());
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
                 }
             }
         }
@@ -35,17 +37,16 @@ public class Esercizio2 {
         @Override
         public void run() {
             synchronized (lock) {
-                for (int i = 0; i < 5; i++) {
-                    try {
-                        Random rand = new Random();
-                        int cifra = rand.nextInt(1,100);
-                        contoCorrente += cifra;
-                        System.out.println("Deposito di "+ cifra+ " euro eseguito. Saldo totale: " + contoCorrente + " da " + Thread.currentThread().getName());
-                        Thread.sleep(2000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
+                try {
+                    Random rand = new Random();
+                    int cifra = rand.nextInt(1, 100);
+                    contoCorrente += cifra;
+                    System.out.println("Deposito di " + cifra + " euro eseguito. Saldo totale: " + contoCorrente + " da " + Thread.currentThread().getName());
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
                 }
+
             }
         }
 
@@ -55,6 +56,12 @@ public class Esercizio2 {
     public static void main(String[] args) {
         Thread depositoThread = new Thread(new Deposito());
         Thread prelievoThread = new Thread(new Prelievo());
+
+        Thread[] listaThread = new Thread[10];
+
+        for(int i = 0; i< listaThread.length;i++){
+
+        }
 
         depositoThread.start();
         prelievoThread.start();

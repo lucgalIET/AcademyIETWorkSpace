@@ -1,5 +1,6 @@
 package perCasa.Esercizi_15_06_2023;
 
+import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -28,16 +29,24 @@ public class RunnerMain implements Runnable {
     @Override
     public void run() {
         try {
-            lock.lock();
 
+            //lock.lock();
             semaphore.acquire();
+            Random rand = new Random();
+            boolean n = rand.nextBoolean();
+            if(n){
+                Thread.sleep(1000);
+            }else{
+                Thread.sleep(4000);
+            }
+
             if (count % 2 == 0) {
                 System.out.println("Il corridore della squadra A è partito! " + Thread.currentThread().getName());
             } else {
                 System.out.println("Il corridore della squadra B è partito! " + Thread.currentThread().getName());
             }
             count++;
-            Thread.sleep(2000);
+            //Thread.sleep(2000);
 
             metriPercorsiA += 25;
             metriPercorsiB += 25;
@@ -50,12 +59,12 @@ public class RunnerMain implements Runnable {
                 System.out.println("Ha vinto la squadra B");
                 vincitore = true;
             }
-            semaphore.release();
-
-            lock.unlock();
 
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
+        }finally {
+            semaphore.release();
+            //lock.unlock();
         }
 
     }
