@@ -1,4 +1,4 @@
-package designpatter.builder;
+package designpattern.builder;
 /*
 
 Sviluppare un'applicazione per creare automobili personalizzate. Implementa un Builder per la creazione di automobili.

@@ -1,4 +1,4 @@
-package designpatter.factoryabstract;
+package designpattern.factoryabstract;
 
 public class Sedia implements Mobili{
     @Override

@@ -1,4 +1,4 @@
-package designpatter.builder;
+package designpattern.builder;
 
 import java.util.Scanner;
 

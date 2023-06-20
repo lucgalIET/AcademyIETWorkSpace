@@ -1,4 +1,4 @@
-package designpatter.factoryabstract;
+package designpattern.factoryabstract;
 /*
 Sviluppare un'applicazione java per la creazione di mobili.
 Implementa un'Abstract Factory per la creazione di mobili in diversi stili, come "Moderno" e "Classico".

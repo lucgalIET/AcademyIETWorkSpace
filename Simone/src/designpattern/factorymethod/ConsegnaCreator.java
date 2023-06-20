@@ -1,4 +1,4 @@
-package designpatter.factorymethod;
+package designpattern.factorymethod;
 
 public abstract class ConsegnaCreator {
     public abstract Consegna creaConsegna();

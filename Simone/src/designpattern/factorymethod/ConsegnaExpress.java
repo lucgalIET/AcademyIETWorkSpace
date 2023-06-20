@@ -1,4 +1,4 @@
-package designpatter.factorymethod;
+package designpattern.factorymethod;
 
 public class ConsegnaExpress implements Consegna {
     @Override
