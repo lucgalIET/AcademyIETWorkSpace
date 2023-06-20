@@ -6,19 +6,19 @@ import java.util.List;
 /*Sviluppare un'applicazione in java e implementare un logger per la registrazione di eventi nell'applicazione.
 Utilizza il pattern Singleton per creare un'istanza unica della classe Logger, in modo che tutti
 i componenti dell'applicazione possano accedere allo stesso logger per registrare eventi.*/
-public class Logger {
+public class LoggerSingleton {
 
-    private static Logger instance;
+    private static LoggerSingleton instance;
 
     private static List<String> listaEventi = new ArrayList<>();
 
-    private Logger(){
+    private LoggerSingleton(){
 
     }
 
-    public static Logger getInstance(){
+    public static LoggerSingleton getInstance(){
         if(instance == null){
-            instance = new Logger();
+            instance = new LoggerSingleton();
         }
         return instance;
     }
