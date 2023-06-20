@@ -1,4 +1,4 @@
-package Ciro.designpatter.esercizio1.builder;
+package Ciro.designpatter.builder;
 /*
 
 Sviluppare un'applicazione per creare automobili personalizzate. Implementa un Builder per la creazione di automobili.

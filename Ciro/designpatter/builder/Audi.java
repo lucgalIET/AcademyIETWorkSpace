@@ -1,4 +1,4 @@
-package Ciro.designpatter.esercizio1.builder;
+package Ciro.designpatter.builder;
 
 import java.util.Scanner;
 
