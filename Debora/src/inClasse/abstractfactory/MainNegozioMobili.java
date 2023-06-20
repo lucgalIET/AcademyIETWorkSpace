@@ -1,3 +1,5 @@
+package inClasse.abstractfactory;
+
 public class MainNegozioMobili {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package inClasse.abstractfactory;
+
 public class Sedia implements Mobili{
     @Override
     public void assembla() {

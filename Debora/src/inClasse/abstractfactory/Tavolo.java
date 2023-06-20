@@ -1,3 +1,4 @@
+package inClasse.abstractfactory;
 
 public class Tavolo implements Mobili {
 

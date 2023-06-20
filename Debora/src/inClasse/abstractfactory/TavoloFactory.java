@@ -1,3 +1,5 @@
+package inClasse.abstractfactory;
+
 public class TavoloFactory implements MobiliFactory{
 
     @Override
