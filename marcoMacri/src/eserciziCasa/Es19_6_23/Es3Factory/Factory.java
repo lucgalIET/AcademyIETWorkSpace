@@ -1,4 +1,4 @@
-package marcoMacri.src.eserciziCasa.Es19_6_23.Es3;
+package marcoMacri.src.eserciziCasa.Es19_6_23.Es3Factory;
 
 //Esercizio su Factory Method:
 //        Sviluppare un'applicazione java di logistica che gestisce la consegna di pacchi.

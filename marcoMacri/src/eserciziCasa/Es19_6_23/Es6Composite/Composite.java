@@ -1,4 +1,4 @@
-package marcoMacri.src.eserciziCasa.Es19_6_23.Es6;
+package marcoMacri.src.eserciziCasa.Es19_6_23.Es6Composite;
 //Esercizio su Composite:
 //
 //        Sviluppare un'applicazione in java per la gestione di una struttura aziendale.

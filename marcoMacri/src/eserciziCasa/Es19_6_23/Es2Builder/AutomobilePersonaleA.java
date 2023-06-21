@@ -1,4 +1,4 @@
-package marcoMacri.src.eserciziCasa.Es19_6_23.Es2;
+package marcoMacri.src.eserciziCasa.Es19_6_23.Es2Builder;
 //Esercizio su Builder:
 //        Sviluppare un'applicazione java per creare automobili personalizzate.
 //        Implementa un Builder per la creazione di automobili. L'automobile avrà diverse parti come "Motore", "Carrozzeria" e "Interni".

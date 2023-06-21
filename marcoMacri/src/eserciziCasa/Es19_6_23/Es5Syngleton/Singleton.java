@@ -1,4 +1,4 @@
-package marcoMacri.src.eserciziCasa.Es19_6_23.Es5;
+package marcoMacri.src.eserciziCasa.Es19_6_23.Es5Syngleton;
 //Esercizio su Singleton:
 //
 //        Sviluppare un'applicazione in java e implementare un logger per la registrazione di eventi nell'applicazione.
