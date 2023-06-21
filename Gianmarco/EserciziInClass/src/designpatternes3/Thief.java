@@ -9,5 +9,5 @@ Inoltre, i giocatori possono personalizzare il personaggio selezionando attribut
 come l'aspetto fisico, l'equipaggiamento e le abilità speciali.
 
  */
-public class Thief extends Class{
-}
+//public class Thief extends Class{
+//}

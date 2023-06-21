@@ -7,15 +7,15 @@ e classi (guerrieri, maghi, ladri, ecc.).
 Inoltre, i giocatori possono personalizzare il personaggio selezionando attributi
 come l'aspetto fisico, l'equipaggiamento e le abilità speciali.
  */
-public class Human extends Race implements Choices{
-    @Override
-    public Race choseRace() {
-        return new Human();
-    }
-
-    @Override
-    public Type choseType() {
-        return null;
-    }
-
-}
+//public class Human extends Race implements Choices{
+//    @Override
+//    public Race choseRace() {
+//        return new Human();
+//    }
+//
+//    @Override
+//    public Type choseType() {
+//        return null;
+//    }
+//
+//}

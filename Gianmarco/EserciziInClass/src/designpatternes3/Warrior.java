@@ -7,5 +7,4 @@ e classi (guerrieri, maghi, ladri, ecc.).
 Inoltre, i giocatori possono personalizzare il personaggio selezionando attributi
 come l'aspetto fisico, l'equipaggiamento e le abilità speciali.
  */
-public class Warrior extends Class{
-}
+//public class Warrior extends Class{
