@@ -1,8 +1,15 @@
-package manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06;
+package manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder;
+
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder.Character;
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder.CharacterBuilder;
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.weapon.creator.MeleeWeaponCreator;
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.weapon.creator.RangedWeaponCreator;
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.weapon.creator.Weapon;
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.weapon.creator.WeaponCreator;
 
 import java.util.Scanner;
 
-public class CharacterConstructor implements CharacterBuilder{
+public class CharacterConstructor implements CharacterBuilder {
     private Character character;
     Scanner myScan;
 
@@ -55,9 +62,21 @@ public class CharacterConstructor implements CharacterBuilder{
     @Override
     public void equipment() {
         String select;
-        System.out.println("Insert your new item: ");
+        System.out.println("Select 1 for melee weapon or 2 for ranged weapon: ");
         select = myScan.next();
-        character.addEquipment(select);
+        switch (select){
+            case "1":{
+                WeaponCreator weaponCreator = new MeleeWeaponCreator();
+                Weapon sword = weaponCreator.forgeWeapon();
+                character.addEquipment(sword);
+            } break;
+            case "2":{
+                WeaponCreator weaponCreator = new RangedWeaponCreator();
+                Weapon bow = weaponCreator.forgeWeapon();
+                character.addEquipment(bow);
+            } break;
+            default: throw new IllegalArgumentException();
+        }
     }
 
     @Override

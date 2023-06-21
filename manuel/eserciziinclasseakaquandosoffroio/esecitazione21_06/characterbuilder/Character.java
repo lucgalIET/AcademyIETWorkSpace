@@ -1,4 +1,6 @@
-package manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06;
+package manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder;
+
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.weapon.creator.Weapon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +9,7 @@ public class Character {
     private String name;
     private String race;
     private String type;
-    private List<String> equipment = new ArrayList<>();
+    private List<Weapon> equipment = new ArrayList<>();
     private List<String> abilities = new ArrayList<>();
     private List<String> appereance = new ArrayList<>();
 
@@ -26,7 +28,7 @@ public class Character {
         this.type = type;
     }
 
-    public void addEquipment(String equipment) {
+    public void addEquipment(Weapon equipment) {
         this.equipment.add(equipment);
     }
 
@@ -41,7 +43,9 @@ public class Character {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[").append("Name: "+name).append(" Race: "+race).append(" Class: "+type).append("]");
+        sb.append("[").append("Name: "+name).append(" Race: "+race).append(" Class: "+type).append("]").append("\n");
+        sb.append("Inventory: ");
+        equipment.forEach(x -> sb.append("["x+"]"));
         return sb.toString();
     }
 }

@@ -1,4 +1,7 @@
-package manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06;
+package manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder;
+
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder.Character;
+import manuel.eserciziinclasseakaquandosoffroio.esecitazione21_06.characterbuilder.CharacterBuilder;
 
 public class CharacterDirector {
     private CharacterBuilder characterBuilder;
