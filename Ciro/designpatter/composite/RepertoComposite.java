@@ -15,7 +15,7 @@ public class RepertoComposite implements DipendenteComponent{
 
     public void aggiungiDipendente(DipendenteLeaf dipendente){
         listaDipendenti.add(dipendente);
-        System.out.println("Il dipendente è stato aggiunto al reparto e può lavirare!");
+        System.out.println("Il dipendente è stato aggiunto al reparto e può lavorare!");
     }
 
     public void rimuoviDipendente(DipendenteLeaf dipendente){
