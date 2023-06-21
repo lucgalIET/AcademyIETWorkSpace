@@ -1,5 +1,8 @@
 package manuel.eserciziacasa.esercizicreationaldp.esercizio1.mobiliantichi;
 
-public interface MobileAnticoFactory {
+import manuel.eserciziacasa.esercizicreationaldp.esercizio1.MobileFactory;
+
+public interface MobileAnticoFactory extends MobileFactory<MobileAntico> {
+    @Override
     MobileAntico creaMobile();
 }
