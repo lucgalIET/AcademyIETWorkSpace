@@ -1,6 +1,6 @@
 package inClasse.esercizio_21_06_2023;
 
-public class Chooses {
+public class Choices {
 
     private static Race race;
     private static Type type;
@@ -15,7 +15,7 @@ public class Chooses {
     }
 
     public static void setName(String name) {
-        Chooses.name = name;
+        Choices.name = name;
     }
 
     public static Race getRace() {
@@ -23,7 +23,7 @@ public class Chooses {
     }
 
     public static void setRace(Race race) {
-        Chooses.race = race;
+        Choices.race = race;
     }
 
     public static Type getType() {
@@ -31,7 +31,7 @@ public class Chooses {
     }
 
     public static void setType(Type type) {
-        Chooses.type = type;
+        Choices.type = type;
     }
 
     public static String getAppereance() {
@@ -39,7 +39,7 @@ public class Chooses {
     }
 
     public static void setAppereance(String appereance) {
-        Chooses.appereance = appereance;
+        Choices.appereance = appereance;
     }
 
     public static String getEquip() {
@@ -47,7 +47,7 @@ public class Chooses {
     }
 
     public static void setEquip(String equip) {
-        Chooses.equip = equip;
+        Choices.equip = equip;
     }
 
     public static String getAbilities() {
@@ -55,6 +55,6 @@ public class Chooses {
     }
 
     public static void setAbilities(String abilities) {
-        Chooses.abilities = abilities;
+        Choices.abilities = abilities;
     }
 }

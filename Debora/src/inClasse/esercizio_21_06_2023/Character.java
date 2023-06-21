@@ -36,37 +36,37 @@ public class Character implements CharacterBuilder{
 
     @Override
     public String choseName() {
-        setName(Chooses.getName());
+        setName(Choices.getName());
         return name;
     }
 
     @Override
     public Race choseRace() {
-        setRace(Chooses.getRace());
+        setRace(Choices.getRace());
         return race;
     }
 
     @Override
     public Type choseType() {
-        setType(Chooses.getType());
+        setType(Choices.getType());
         return type;
     }
 
     @Override
     public String appearence() {
-        setAppearence(Chooses.getAppereance());
+        setAppearence(Choices.getAppereance());
         return appearence;
     }
 
     @Override
     public String equip() {
-        setEquip(Chooses.getEquip());
+        setEquip(Choices.getEquip());
         return equip;
     }
 
     @Override
     public String abilities() {
-        setAbilities(Chooses.getAbilities());
+        setAbilities(Choices.getAbilities());
         return abilities;
     }
 
