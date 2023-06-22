@@ -7,9 +7,9 @@ e classi (guerrieri, maghi, ladri, ecc.).
 Inoltre, i giocatori possono personalizzare il personaggio selezionando attributi
 come l'aspetto fisico, l'equipaggiamento e le abilità speciali.
  */
-//public class Main {
-//    public static void main(String[] args) {
-//
-//    }
-//
-//}
+public class Main {
+    public static void main(String[] args) {
+
+    }
+
+}

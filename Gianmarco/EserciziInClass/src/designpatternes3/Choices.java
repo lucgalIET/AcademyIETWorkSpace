@@ -7,10 +7,10 @@ e classi (guerrieri, maghi, ladri, ecc.).
 Inoltre, i giocatori possono personalizzare il personaggio selezionando attributi
 come l'aspetto fisico, l'equipaggiamento e le abilità speciali.
  */
-//public interface Choices {
-//    Race choseRace();
-//    Type choseType();
-//}
-//
-////creare un oggetto che contenga tutti quei parametri(razza,tipo,altri 3)
-////fare una stampa di tutte le caratteristiche senza creare un oggetto
+public interface Choices {
+    Race choseRace();
+    Type choseType();
+}
+
+//creare un oggetto che contenga tutti quei parametri(razza,tipo,altri 3)
+//fare una stampa di tutte le caratteristiche senza creare un oggetto
