@@ -45,7 +45,7 @@ public class Character {
         StringBuilder sb = new StringBuilder();
         sb.append("[").append("Name: "+name).append(" Race: "+race).append(" Class: "+type).append("]").append("\n");
         sb.append("Inventory: ");
-        equipment.forEach(x -> sb.append("["x+"]"));
+        equipment.forEach(x -> sb.append("["+x+"]"));
         return sb.toString();
     }
 }
