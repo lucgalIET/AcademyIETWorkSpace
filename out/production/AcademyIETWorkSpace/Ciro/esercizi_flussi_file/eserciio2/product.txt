@@ -1,3 +1,0 @@
-123 martello 2.5
-456 pinza 2.0
-789 cacciavite 1.5
