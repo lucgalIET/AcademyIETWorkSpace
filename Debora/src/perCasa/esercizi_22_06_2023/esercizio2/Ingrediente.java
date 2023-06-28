@@ -1,3 +1,0 @@
-package perCasa.esercizi_22_06_2023.esercizio2;
-
-public enum Ingrediente {POMODORO, MOZZARELLA, SALAME, TONNO, CIPOLLA, FORMAGGIO, PATATINE, ACCIUGHE, RUCOLA, GRANA, PROSCIUTTO}
