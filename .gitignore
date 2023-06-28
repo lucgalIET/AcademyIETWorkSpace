@@ -25,7 +25,9 @@ hs_err_pid*
 replay_pid*
 
 #
+sviluppolocale/
 .idea
 *.iml
+out/
 /out/
 
